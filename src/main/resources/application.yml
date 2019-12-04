@@ -1,0 +1,25 @@
+spring:
+  h2:
+    console:
+      path: /h2
+      enabled: true
+      settings:
+        trace: true
+        web-allow-others: true
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:h2:D:\six_myspace\mine-tools\out\db
+    schema: schema.sql
+    username: root
+    password: qwe123
+
+logging:
+  level:
+    org:
+      hibernate:
+        stat: trace
+        type: trace
