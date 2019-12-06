@@ -1,5 +1,6 @@
-package cn.sixlab.mine.tools;
+package cn.sixlab.mine.tools.repository;
 
+import cn.sixlab.mine.tools.models.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -16,7 +17,7 @@ public class EmployeeJDBCRepository {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    class EmployeeRowMapper implements RowMapper< Employee > {
+    class EmployeeRowMapper implements RowMapper<Employee> {
         @Override
         public Employee mapRow(ResultSet rs, int rowNum) throws SQLException {
             Employee employee = new Employee();

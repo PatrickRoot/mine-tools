@@ -1,4 +1,4 @@
-package cn.sixlab.mine.tools;
+package cn.sixlab.mine.tools.models;
 
 
 public class Employee {
